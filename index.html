@@ -1,0 +1,392 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crate Pilot | Desktop Music Library Analysis & Organization</title>
+    <meta
+      name="description"
+      content="Crate Pilot is a desktop app for scanning, analyzing, organizing, and cleaning music libraries for DJs, collectors, and prep workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand">Crate Pilot</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#tour">Product Tour</a>
+          <a href="#plans">Free vs Full</a>
+          <a href="#donate">Donate</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Desktop App for DJs and Music Collectors</p>
+            <h1>Analyze, clean, and organize your music library with one focused desktop workflow.</h1>
+            <p class="lead">
+              Crate Pilot helps you scan folders, inspect BPM/key/Camelot data, clean duplicates, and prepare better-structured crates with less manual work.
+            </p>
+            <p class="note">
+              Start with <strong>24 hours of full access</strong> after installation. After that, Crate Pilot continues in a limited free mode unless you unlock Full with a donation license key.
+            </p>
+            <div class="cta-row">
+              <a href="#" class="btn btn-primary js-download-link">Download the App</a>
+              <a href="#donate" class="btn btn-secondary">Unlock Full Version</a>
+              <a href="#tour" class="btn btn-secondary">See Product Tour</a>
+            </div>
+            <p class="tiny">Desktop app for Windows. Download URL is configured in <code>landing/config.js</code>.</p>
+            <p class="note">Minimum donation to unlock Full Version: <strong>10 EUR</strong></p>
+          </div>
+          <article class="hero-card">
+            <h2>Built for serious library prep</h2>
+            <ul>
+              <li>Folder-based music management and indexing</li>
+              <li>BPM, key, and Camelot analysis visibility</li>
+              <li>Duplicate cleanup and controlled organization tools</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="what-it-does">
+        <div class="container">
+          <h2>What Crate Pilot does</h2>
+          <p class="section-intro">
+            Crate Pilot is a desktop music library prep and organization tool built to save time. It scans and indexes your folders, helps you organize and export tracks by detected scale, and supports cleaner preparation workflows by renaming files using key and Camelot data.
+          </p>
+          <div class="pill-grid">
+            <span>Scans and indexes music folders</span>
+            <span>Analyzes tracks for BPM, key, and Camelot</span>
+            <span>Lets you browse and play tracks quickly</span>
+            <span>Supports duplicate cleanup with clear review flow</span>
+            <span>Includes rename and folder organization tools</span>
+            <span>Designed for offline desktop usage</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tour">
+        <div class="container">
+          <h2>Product Tour</h2>
+          <p class="section-intro">Each section below shows the matching Crate Pilot screen. Click any screenshot to open a larger view.</p>
+
+          <article class="tour-item">
+            <div class="tour-copy">
+              <p class="eyebrow">Overview</p>
+              <h3>Main Workspace</h3>
+              <p>The main view brings scan status, library browsing, player controls, and feature modules into one place.</p>
+              <p>This gives you a clear top-level workflow for moving from raw folders to a prepared collection.</p>
+            </div>
+            <button
+              class="shot-button"
+              type="button"
+              data-lightbox-index="0"
+              data-title="Main Workspace"
+              data-caption="Central workspace for scanning, browsing, playback, and prep actions."
+              aria-label="Open Main Workspace screenshot"
+            >
+              <span class="shot-frame">
+                <img src="./assets/crate-pilot-overview.png" alt="Crate Pilot main workspace screenshot" loading="lazy" />
+              </span>
+              <span class="zoom-hint">Click to enlarge</span>
+            </button>
+          </article>
+
+          <article class="tour-item alt-layout">
+            <button
+              class="shot-button"
+              type="button"
+              data-lightbox-index="1"
+              data-title="Audio Analyzer"
+              data-caption="Analyze tracks for BPM, key, and Camelot values in a focused review view."
+              aria-label="Open Audio Analyzer screenshot"
+            >
+              <span class="shot-frame">
+                <img src="./assets/Analyze.png" alt="Crate Pilot Audio Analyzer screenshot" loading="lazy" />
+              </span>
+              <span class="zoom-hint">Click to enlarge</span>
+            </button>
+            <div class="tour-copy">
+              <p class="eyebrow">Audio Analyzer</p>
+              <h3>BPM, Key, and Camelot Analysis</h3>
+              <p>The analyzer screen shows track-level musical data so you can make stronger preparation and selection decisions.</p>
+              <p>Use it to compare tracks faster and build more coherent sets.</p>
+            </div>
+          </article>
+
+          <article class="tour-item">
+            <div class="tour-copy">
+              <p class="eyebrow">Duplicate Cleaner</p>
+              <h3>Duplicate Review and Cleanup</h3>
+              <p>The duplicate screen helps identify likely duplicate files and inspect them before cleanup.</p>
+              <p>This reduces clutter and keeps your collection lean without blind deletion.</p>
+            </div>
+            <button
+              class="shot-button"
+              type="button"
+              data-lightbox-index="2"
+              data-title="Duplicate Cleaner"
+              data-caption="Review duplicate candidates before deleting or recycling them."
+              aria-label="Open Duplicate Cleaner screenshot"
+            >
+              <span class="shot-frame">
+                <img src="./assets/Duplicates.png" alt="Crate Pilot Duplicate Cleaner screenshot" loading="lazy" />
+              </span>
+              <span class="zoom-hint">Click to enlarge</span>
+            </button>
+          </article>
+
+          <article class="tour-item alt-layout">
+            <button
+              class="shot-button"
+              type="button"
+              data-lightbox-index="3"
+              data-title="Folder Manager"
+              data-caption="Automatically create Maj and Min folders and export tracks by detected scale."
+              aria-label="Open Folder Manager screenshot"
+            >
+              <span class="shot-frame">
+                <img src="./assets/Manager.png" alt="Crate Pilot Folder Manager screenshot" loading="lazy" />
+              </span>
+              <span class="zoom-hint">Click to enlarge</span>
+            </button>
+            <div class="tour-copy">
+              <p class="eyebrow">Folder Manager</p>
+              <h3>Folder-Based Organization</h3>
+              <p>Folder Manager can automatically create two destination folders, <strong>Maj</strong> and <strong>Min</strong>, for the selected source folder.</p>
+              <p>Crate Pilot then exports each song to the correct destination based on detected scale: major tracks go to <strong>Maj</strong> and minor tracks go to <strong>Min</strong>.</p>
+            </div>
+          </article>
+
+          <article class="tour-item">
+            <div class="tour-copy">
+              <p class="eyebrow">Rename Tracks</p>
+              <h3>Consistent Naming Workflow</h3>
+              <p>The rename screen applies repeatable patterns to filenames so your library is easier to sort and search.</p>
+              <p>This is especially useful when collections come from mixed sources with inconsistent naming.</p>
+            </div>
+            <button
+              class="shot-button"
+              type="button"
+              data-lightbox-index="4"
+              data-title="Rename Tracks"
+              data-caption="Apply naming patterns to improve consistency across your library."
+              aria-label="Open Rename Tracks screenshot"
+            >
+              <span class="shot-frame">
+                <img src="./assets/Rename.png" alt="Crate Pilot Rename Tracks screenshot" loading="lazy" />
+              </span>
+              <span class="zoom-hint">Click to enlarge</span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="plans">
+        <div class="container">
+          <h2>Free vs Full</h2>
+          <p class="section-intro">
+            Crate Pilot runs in Full mode for the first 24 hours after installation. After the trial period, you can continue with the Free version or unlock Full permanently with a donation license key.
+          </p>
+          <div class="plan-grid">
+            <article class="plan-card">
+              <h3>Free includes</h3>
+              <ul>
+                <li>Audio player</li>
+                <li>Scan / index</li>
+                <li>Library browsing/navigation</li>
+                <li>Analysis viewing</li>
+                <li>Oscilloscope</li>
+                <li>Themes</li>
+                <li>Waveform viewing</li>
+                <li>Search/filtering</li>
+              </ul>
+            </article>
+            <article class="plan-card plan-card-full">
+              <h3>Full unlock includes</h3>
+              <ul>
+                <li>Rename Tracks execution</li>
+                <li>Delete / Recycle Duplicates</li>
+                <li>Folder Manager execution</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section donate-section" id="donate">
+        <div class="container donate-card">
+          <div>
+            <p class="eyebrow">Unlock Full Version</p>
+            <h2>Unlock Full after PayPal confirmation by email</h2>
+            <p>
+              Crate Pilot is fully unlocked for the first 24 hours after installation. After that, it switches to limited free mode unless you activate a Full license key.
+            </p>
+            <p class="note">Donate via PayPal to: <strong>alexdasca@gmail.com</strong></p>
+            <p class="note">To receive your Full license, email payment confirmation to: <strong>alexdasca@gmail.com</strong></p>
+            <p class="note strong-note">Minimum donation: <strong>10 EUR</strong></p>
+          </div>
+          <div class="donate-cta">
+            <h3>How to unlock Full</h3>
+            <ol class="unlock-steps">
+              <li>Donate 10 EUR or more via PayPal.</li>
+              <li>Email a screenshot of your PayPal payment confirmation to <strong>alexdasca@gmail.com</strong>.</li>
+              <li>Include the email address where you want your Crate Pilot license delivered.</li>
+            </ol>
+            <a class="btn btn-primary btn-large" href="mailto:alexdasca@gmail.com?subject=Crate%20Pilot%20Payment%20Confirmation">Email Payment Confirmation</a>
+            <a class="btn btn-secondary btn-large" href="mailto:alexdasca@gmail.com?subject=Crate%20Pilot%20Full%20Unlock%20Request">Contact for Full Unlock</a>
+            <a class="btn btn-secondary btn-large js-download-link" href="#">Download Crate Pilot</a>
+            <p class="tiny">After payment is confirmed, your signed license key will be sent to the email address you provide.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <h2>FAQ</h2>
+          <div class="faq-grid">
+            <article class="faq-card">
+              <h3>What does the free version include?</h3>
+              <p>Free includes audio player, scan/index, browsing, analysis viewing, oscilloscope, themes, waveform viewing, and search/filtering.</p>
+            </article>
+            <article class="faq-card">
+              <h3>What does the full version unlock?</h3>
+              <p>Full unlock enables Rename Tracks execution, Delete/Recycle Duplicates, and Folder Manager execution.</p>
+            </article>
+            <article class="faq-card">
+              <h3>How does the 24-hour access model work?</h3>
+              <p>After installation, Crate Pilot is fully unlocked for 24 hours. When that period ends, it switches to the limited free version unless you activate a Full license key.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Is Crate Pilot a desktop app?</h3>
+              <p>Yes. Crate Pilot is built as a desktop application for music collection workflows.</p>
+            </article>
+            <article class="faq-card">
+              <h3>Does it work offline?</h3>
+              <p>Yes. Core library scanning, browsing, analysis, and organization workflows are designed for offline use.</p>
+            </article>
+            <article class="faq-card">
+              <h3>How do I unlock the full version?</h3>
+              <p>Donate via PayPal, then email <strong>alexdasca@gmail.com</strong> with a payment confirmation screenshot and the email address where you want the license sent.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p><strong>Crate Pilot</strong></p>
+        <p>&copy; 2026 Crate Pilot. Desktop music library analysis and organization tool.</p>
+        <p>Support: alexdasca@gmail.com</p>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+        <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close image viewer">&times;</button>
+        <button type="button" class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous screenshot">&#10094;</button>
+        <figure class="lightbox-figure">
+          <img id="lightboxImage" src="" alt="" />
+          <figcaption>
+            <strong id="lightboxTitle"></strong>
+            <span id="lightboxCaption"></span>
+          </figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav next" id="lightboxNext" aria-label="Next screenshot">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="./config.js"></script>
+    <script>
+      (function () {
+        const defaultDownloadUrl = "https://github.com/OWNER/REPO/releases/latest/download/Crate-Pilot-Setup.exe";
+        const configuredDownloadUrl = window.CRATE_PILOT_DOWNLOAD_URL || defaultDownloadUrl;
+        const downloadLinks = Array.from(document.querySelectorAll(".js-download-link"));
+        downloadLinks.forEach((link) => {
+          link.setAttribute("href", configuredDownloadUrl);
+          link.setAttribute("target", "_blank");
+          link.setAttribute("rel", "noopener noreferrer");
+        });
+
+        const triggers = Array.from(document.querySelectorAll('.shot-button'));
+        const lightbox = document.getElementById('lightbox');
+        const image = document.getElementById('lightboxImage');
+        const title = document.getElementById('lightboxTitle');
+        const caption = document.getElementById('lightboxCaption');
+        const prevBtn = document.getElementById('lightboxPrev');
+        const nextBtn = document.getElementById('lightboxNext');
+        const closeEls = Array.from(document.querySelectorAll('[data-lightbox-close]'));
+
+        if (!triggers.length || !lightbox || !image || !title || !caption || !prevBtn || !nextBtn) return;
+
+        let currentIndex = 0;
+
+        const slides = triggers.map((button) => {
+          const img = button.querySelector('img');
+          return {
+            src: img ? img.getAttribute('src') : '',
+            alt: img ? img.getAttribute('alt') : 'Crate Pilot screenshot',
+            title: button.dataset.title || 'Screenshot',
+            caption: button.dataset.caption || ''
+          };
+        });
+
+        function render(index) {
+          currentIndex = (index + slides.length) % slides.length;
+          const slide = slides[currentIndex];
+          image.src = slide.src;
+          image.alt = slide.alt;
+          title.textContent = slide.title;
+          caption.textContent = slide.caption;
+        }
+
+        function open(index) {
+          render(index);
+          lightbox.hidden = false;
+          document.body.classList.add('modal-open');
+        }
+
+        function close() {
+          lightbox.hidden = true;
+          document.body.classList.remove('modal-open');
+          image.src = '';
+        }
+
+        triggers.forEach((button, index) => {
+          button.addEventListener('click', () => open(index));
+        });
+
+        closeEls.forEach((el) => {
+          el.addEventListener('click', close);
+        });
+
+        prevBtn.addEventListener('click', () => render(currentIndex - 1));
+        nextBtn.addEventListener('click', () => render(currentIndex + 1));
+
+        document.addEventListener('keydown', (event) => {
+          if (lightbox.hidden) return;
+          if (event.key === 'Escape') close();
+          if (event.key === 'ArrowLeft') render(currentIndex - 1);
+          if (event.key === 'ArrowRight') render(currentIndex + 1);
+        });
+      })();
+    </script>
+  </body>
+</html>
+
+
